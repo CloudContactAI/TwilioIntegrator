@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: twilio-integrator-env
+data:
+    TWILIO_ACCOUNT_SID: 12a345659
+    TWILIO_AUTH_TOKEN: abc123
+    SERVER_PORT: "8080"
+    LOG_LEVEL: INFO
+    CORS_ALLOWED_HOSTS: "*"
+    DEFAULT_SMS_URL: "http://incoming"

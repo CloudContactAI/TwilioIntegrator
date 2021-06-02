@@ -1,0 +1,19 @@
+twilio:
+    accountSid: ${TWILIO_ACCOUNT_SID}
+    authToken: ${TWILIO_AUTH_TOKEN}
+    test: ${TWILIO_TEST_MODE:true}
+    defaultSmsUrl: ${DEFAULT_SMS_URL}
+    queue:
+        releaseTwilioPhones: ${RELEASE_TWILIO_PHONES_QUEUE}
+cors:
+    allowed: ${CORS_ALLOWED_HOSTS}
+logging:
+    level:
+        ROOT: ${LOG_LEVEL}
+server:
+    port: ${SERVER_PORT}
+spring:
+    activemq:
+        broker-url: ${ACTIVE_MQ_BROKER_URL}
+        user: ${ACTIVE_MQ_BROKER_USER}
+        password: ${ACTIVE_MQ_BROKER_PASSWORD}
